@@ -65,7 +65,7 @@ def main(args, uid):
 
     try:
         spoofer = get_os_spoofer()
-    except UnsupportedPlatformSpoofer:
+    except NotImplementedError:
         return UNSUPPORTED_PLATFORM
     
     if args['list']:
